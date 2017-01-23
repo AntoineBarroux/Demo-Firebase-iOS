@@ -1,0 +1,6 @@
+[submodule "Cobalt"]
+	path = Cobalt
+	url = https://github.com/cobaltians/Cobalt-iOS.git
+[submodule "www/platform"]
+	path = www/platform
+	url = https://github.com/cobaltians/Cobalt-Web-iOS.git

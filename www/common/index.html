@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Firebase Demo</title>
+
+
+</head>
+<body>
+
+    <h2>Démo du service Firebase</h2>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+    <script src="../platform/cobalt.min.js"></script>
+    <script>
+        var token;
+
+        cobalt.init({
+            debug : true
+            //debugInBrowser : true
+        });
+
+        cobalt.addEventListener("envoiToken", function(data, callback){ //On stocke le token dans la variable token
+            token = data.token
+        });
+
+        cobalt.sendEvent("getToken"); //On envoie la requête au natif pour récupérer le token généré
+
+        $.ajax({
+            url: 'http://www.build.kristal.io/app/FirebaseDemo/notifs/register', //URL a modifier selon l'appli, ici FirebaseDemo
+            type: 'POST',
+            data: 'token=' + token,
+            dataType: 'text',
+            success: function(text, statut, xhr){
+                console.log('Token géré correctement, le serveur a renvoyé : "' + text + '"');
+            },
+            error: function(xhr, errorType, error){
+                alert("Erreur dans requete AJAX");
+                console.log('Erreur dans la requête AJAX !');
+                console.log(errorType);
+                console.log(error);
+            }
+        });
+    </script>
+</body>
+</html>
