@@ -12,17 +12,22 @@ import FirebaseMessaging
 
 class ViewController: CobaltViewController, CobaltDelegate {
     
+    private var notif:Notifications
+    
     //MARK : LIFECYCLE
 
     required init?(coder: NSCoder){
+        notif = Notifications.sharedInstance
+        
         super.init(coder: coder)
         self.setDelegate(self)
+        
+        notif.deleg = self
+        let notificationName = Notification.Name("onTokenReceived")
+        NotificationCenter.default.addObserver(self, selector: #selector(self.onTokenReceived), name: notificationName, object: nil)
+        
         Cobalt.setResourcePath(Bundle.main.resourcePath! + "/common/")
         initWithPage("index.html", andController: "default")
-    }
-    
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
     override func viewDidLoad() {
@@ -37,17 +42,33 @@ class ViewController: CobaltViewController, CobaltDelegate {
     
     
     
+    
     //MARK : DELEGATE
     
     func onUnhandledEvent(_ event: String, withData data: [AnyHashable : Any], andCallback callback: String) -> Bool{
-        if (event == "getToken"){
-            print("catch de l'event")
-            let data = ["token":  FIRInstanceID.instanceID().token()!]
-            let nsdata:NSDictionary = data as NSDictionary
-            
-            sendEvent("envoiToken", withData: nsdata, andCallback: nil)
+
+        if (event == EVENT_GETTOKEN){
+            self.notif.getToken(callback: callback)
             return true
         }
+        
+        if (event == EVENT_SUBSCRIBE){
+            let nomTopic:String = data["name"] as! String
+            FIRMessaging.messaging().subscribe(toTopic: "/topics/\(nomTopic)")
+            NSLog("Abonnement au topic \(nomTopic)")
+            sendCallback(callback, withData: nil)
+            return true
+        }
+        
+        if (event == EVENT_UNSUBSCRIBE){
+            let nomTopic:String = data["name"] as! String
+            FIRMessaging.messaging().unsubscribe(fromTopic: "/topics/\(nomTopic)")
+            NSLog("Désabonnement du topic \(nomTopic)")
+            sendCallback(callback, withData: nil)
+            return true
+        }
+        
+        
         return false
     }
     
@@ -57,6 +78,14 @@ class ViewController: CobaltViewController, CobaltDelegate {
     
     func onUnhandledCallback(_ callback: String, withData data: [AnyHashable : Any]) -> Bool{
         return false
+    }
+    
+    func onTokenReceived(notification: NSNotification){
+        let infos:Dictionary<String, String> = notification.userInfo as! Dictionary<String, String>
+        var data = Dictionary<String, String>()
+        data["token"] = infos["token"]
+        data["apiKey"] = infos["apiKey"]
+        sendCallback(infos["callback"], withData: data as NSDictionary)
     }
 
 

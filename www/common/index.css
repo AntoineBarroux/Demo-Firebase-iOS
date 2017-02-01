@@ -1,0 +1,48 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Calibri, Arial, sans-serif;
+}
+
+
+div#buttons{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    margin: 15% 0%;
+}
+
+div#buttons > div.ligne{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 3vh;
+}
+
+div#buttons > div.ligne > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 18vh;
+    height: 18vh;
+    border-radius: 18vh;
+    margin: 0px 2vw;
+    padding: 2px;
+    border: 4px solid silver;
+}
+
+div#buttons > div.ligne > div > img{
+    width: 18vh;
+    height: auto;
+}
+
+div#buttons > div.ligne > div.abo {
+    border: 4px solid greenyellow;
+}

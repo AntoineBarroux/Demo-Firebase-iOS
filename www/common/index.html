@@ -6,46 +6,38 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Firebase Demo</title>
-
+    <link rel="stylesheet" href="index.css" />
 
 </head>
 <body>
 
-    <h2>Démo du service Firebase</h2>
-
-
+        <div id="buttons">
+            <div class="ligne">
+                <div id="cirque">
+                    <img src="img/circus.png" alt="Cirque" />
+                </div>
+                <div id="theatre">
+                    <img src="img/theater.png" alt="Theatre" />
+                </div>
+            </div>
+            <div class="ligne">
+                <div id="concert">
+                    <img src="img/acoustic-guitar.png" alt="Concert" />
+                </div>
+                <div id="danse">
+                    <img src="img/ballet.png" alt="Danse" />
+                </div>
+            </div>
+            <div class="ligne">
+                <div id="conference">
+                    <img src="img/conference.png" alt="Conférence" />
+                </div>
+            </div>
+        </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
     <script src="../platform/cobalt.min.js"></script>
-    <script>
-        var token;
-
-        cobalt.init({
-            debug : true
-            //debugInBrowser : true
-        });
-
-        cobalt.addEventListener("envoiToken", function(data, callback){ //On stocke le token dans la variable token
-            token = data.token
-        });
-
-        cobalt.sendEvent("getToken"); //On envoie la requête au natif pour récupérer le token généré
-
-        $.ajax({
-            url: 'http://www.build.kristal.io/app/FirebaseDemo/notifs/register', //URL a modifier selon l'appli, ici FirebaseDemo
-            type: 'POST',
-            data: 'token=' + token,
-            dataType: 'text',
-            success: function(text, statut, xhr){
-                console.log('Token géré correctement, le serveur a renvoyé : "' + text + '"');
-            },
-            error: function(xhr, errorType, error){
-                alert("Erreur dans requete AJAX");
-                console.log('Erreur dans la requête AJAX !');
-                console.log(errorType);
-                console.log(error);
-            }
-        });
-    </script>
+    <script src="../Plugins-AppInfos-Web/cobalt.appInfos.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
