@@ -10,12 +10,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FirebaseDemo/AppDelegate.swift"
-            timestampString = "503917501.179823"
+            timestampString = "507725431.715991"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "applicationDidEnterBackground(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Cobalt-Plugin-Fcm/cobalt-plugin-fcm-ios/CobaltFcmPluginInit.swift"
+            timestampString = "508061375.098597"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
             endingLineNumber = "58"
-            landmarkName = "application(_:didReceiveRemoteNotification:)"
+            landmarkName = "tokenRefreshNotification(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -12,20 +12,11 @@ import FirebaseMessaging
 
 class ViewController: CobaltViewController, CobaltDelegate {
     
-    private var notif:Notifications
-    
     //MARK : LIFECYCLE
 
     required init?(coder: NSCoder){
-        notif = Notifications.sharedInstance
-        
         super.init(coder: coder)
         self.setDelegate(self)
-        
-        notif.deleg = self
-        let notificationName = Notification.Name("onTokenReceived")
-        NotificationCenter.default.addObserver(self, selector: #selector(self.onTokenReceived), name: notificationName, object: nil)
-        
         Cobalt.setResourcePath(Bundle.main.resourcePath! + "/common/")
         initWithPage("index.html", andController: "default")
     }
@@ -47,27 +38,12 @@ class ViewController: CobaltViewController, CobaltDelegate {
     
     func onUnhandledEvent(_ event: String, withData data: [AnyHashable : Any], andCallback callback: String) -> Bool{
 
-        if (event == EVENT_GETTOKEN){
-            self.notif.getToken(callback: callback)
-            return true
+        if (event == EVENT_GETAPIKEY){
+            NSLog("Récupération de la clé d'API")
+            var data = Dictionary<String, String>()
+            data["apiKey"] = SECRET_KEY
+            sendCallback(callback, withData: data as NSDictionary)
         }
-        
-        if (event == EVENT_SUBSCRIBE){
-            let nomTopic:String = data["name"] as! String
-            FIRMessaging.messaging().subscribe(toTopic: "/topics/\(nomTopic)")
-            NSLog("Abonnement au topic \(nomTopic)")
-            sendCallback(callback, withData: nil)
-            return true
-        }
-        
-        if (event == EVENT_UNSUBSCRIBE){
-            let nomTopic:String = data["name"] as! String
-            FIRMessaging.messaging().unsubscribe(fromTopic: "/topics/\(nomTopic)")
-            NSLog("Désabonnement du topic \(nomTopic)")
-            sendCallback(callback, withData: nil)
-            return true
-        }
-        
         
         return false
     }
@@ -80,14 +56,6 @@ class ViewController: CobaltViewController, CobaltDelegate {
         return false
     }
     
-    func onTokenReceived(notification: NSNotification){
-        let infos:Dictionary<String, String> = notification.userInfo as! Dictionary<String, String>
-        var data = Dictionary<String, String>()
-        data["token"] = infos["token"]
-        data["apiKey"] = infos["apiKey"]
-        sendCallback(infos["callback"], withData: data as NSDictionary)
-    }
-
 
 }
 

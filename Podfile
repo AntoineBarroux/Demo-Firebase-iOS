@@ -6,6 +6,6 @@ target 'FirebaseDemo' do
   use_frameworks!
 
   # Pods for FirebaseDemo
-  pod 'Firebase'
-  pod 'Firebase/Messaging'
+pod 'Firebase/Core'
+pod 'Firebase/Messaging'
 end

@@ -4,3 +4,11 @@
 [submodule "www/platform"]
 	path = www/platform
 	url = https://github.com/cobaltians/Cobalt-Web-iOS.git
+[submodule "Plugins-AppInfos-iOS"]
+	path = Plugins-AppInfos-iOS
+	url = https://github.com/Cobaltians-Plugins/Plugins-AppInfos-iOS.git
+	branch = develop
+[submodule "www/Plugins-AppInfos-Web"]
+	path = www/Plugins-AppInfos-Web
+	url = https://github.com/Cobaltians-Plugins/Plugins-AppInfos-Web.git
+	branch = develop

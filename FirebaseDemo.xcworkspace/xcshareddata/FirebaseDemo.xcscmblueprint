@@ -1,0 +1,65 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "436378E46CC9EB4958D93B600A3C1B4A5EDA1B7E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9992967ED614AF1CF41696EA7F0AA8EE114DEE84" : 9223372036854775807,
+    "B60293B3AB96366974F747BFD267951633A5CB7C" : 9223372036854775807,
+    "436378E46CC9EB4958D93B600A3C1B4A5EDA1B7E" : 9223372036854775807,
+    "101315F4C6008F32816F69B09871CA89956743E0" : 9223372036854775807,
+    "5A61553A7764B53C6DEFDB1767CD8EEBFC6206A9" : 9223372036854775807,
+    "7453ABE70C99836A01F5BB164363F4C90D3354C5" : 9223372036854775807,
+    "3BFD49D7E966534AA392A2232D0D909340CD9929" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5F348AB9-9916-490C-B7F9-A6AAFB006549",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9992967ED614AF1CF41696EA7F0AA8EE114DEE84" : "Demo-Firebase-iOS\/www\/Plugins-AppInfos-Web\/",
+    "B60293B3AB96366974F747BFD267951633A5CB7C" : "Cobalt-Plugin-Fcm\/cobalt-plugin-fcm-ios\/",
+    "436378E46CC9EB4958D93B600A3C1B4A5EDA1B7E" : "Demo-Firebase-iOS\/",
+    "101315F4C6008F32816F69B09871CA89956743E0" : "Demo-Firebase-iOS\/Cobalt\/",
+    "5A61553A7764B53C6DEFDB1767CD8EEBFC6206A9" : "Cobalt-Plugin-Fcm\/cobalt-plugin-fcm-web\/",
+    "7453ABE70C99836A01F5BB164363F4C90D3354C5" : "Demo-Firebase-iOS\/www\/platform\/",
+    "3BFD49D7E966534AA392A2232D0D909340CD9929" : "Demo-Firebase-iOS\/Plugins-AppInfos-iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FirebaseDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FirebaseDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cobaltians\/Cobalt-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "101315F4C6008F32816F69B09871CA89956743E0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Cobaltians-Plugins\/Plugins-AppInfos-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3BFD49D7E966534AA392A2232D0D909340CD9929"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AntoineBarroux\/Demo-Firebase-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "436378E46CC9EB4958D93B600A3C1B4A5EDA1B7E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/sd-66128.dedibox.fr\/kristal\/cobalt-plugin-fcm-web.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5A61553A7764B53C6DEFDB1767CD8EEBFC6206A9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cobaltians\/Cobalt-Web-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7453ABE70C99836A01F5BB164363F4C90D3354C5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Cobaltians-Plugins\/Plugins-AppInfos-Web.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9992967ED614AF1CF41696EA7F0AA8EE114DEE84"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/sd-66128.dedibox.fr\/kristal\/cobalt-plugin-fcm-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B60293B3AB96366974F747BFD267951633A5CB7C"
+    }
+  ]
+}
