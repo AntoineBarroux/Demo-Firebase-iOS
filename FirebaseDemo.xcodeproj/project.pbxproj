@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710CADE21E48A53C00DB0C52 /* libCobalt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 710CADDD1E48A53000DB0C52 /* libCobalt.a */; };
+		710CADE31E48A54200DB0C52 /* Cobalt.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 710CADDF1E48A53000DB0C52 /* Cobalt.bundle */; };
+		710CADE51E48A5D100DB0C52 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710CADE41E48A5D100DB0C52 /* Constants.swift */; };
+		710CADEB1E48A63700DB0C52 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 710CADE71E48A63700DB0C52 /* .gitignore */; };
+		710CADEC1E48A63700DB0C52 /* CobaltAppInfosPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 710CADE91E48A63700DB0C52 /* CobaltAppInfosPlugin.m */; };
+		710CADED1E48A63700DB0C52 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 710CADEA1E48A63700DB0C52 /* LICENSE */; };
+		710CADF21E48A67400DB0C52 /* CobaltFcmPluginInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710CADEF1E48A67400DB0C52 /* CobaltFcmPluginInit.swift */; };
+		710CADF31E48A67400DB0C52 /* FcmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710CADF01E48A67400DB0C52 /* FcmManager.swift */; };
+		710CADF41E48A67400DB0C52 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 710CADF11E48A67400DB0C52 /* README.md */; };
+		710CADF61E48A6C000DB0C52 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 710CADF51E48A6C000DB0C52 /* www */; };
 		71AE46621E08133A0016D660 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AE46611E08133A0016D660 /* AppDelegate.swift */; };
 		71AE46641E08133A0016D660 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AE46631E08133A0016D660 /* ViewController.swift */; };
 		71AE46671E08133A0016D660 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71AE46651E08133A0016D660 /* Main.storyboard */; };
@@ -16,9 +26,43 @@
 		90683B58A31C1F3D0C746205 /* Pods_FirebaseDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA23365E26EBC3B50602BE5D /* Pods_FirebaseDemo.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		710CADDC1E48A53000DB0C52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 710CADD61E48A53000DB0C52 /* Cobalt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE31EB1B1C3EC52100141B6E;
+			remoteInfo = Cobalt;
+		};
+		710CADDE1E48A53000DB0C52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 710CADD61E48A53000DB0C52 /* Cobalt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEFF884A1C4541FD0063AA18;
+			remoteInfo = CobaltResources;
+		};
+		710CADE01E48A53600DB0C52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 710CADD61E48A53000DB0C52 /* Cobalt.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEFF882F1C3ED3BC0063AA18;
+			remoteInfo = Framework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2619C5002D76ED5FDA34C348 /* Pods-FirebaseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseDemo/Pods-FirebaseDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		65985DCAD7258AA8C24B5193 /* Pods-FirebaseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseDemo/Pods-FirebaseDemo.release.xcconfig"; sourceTree = "<group>"; };
+		710CADD61E48A53000DB0C52 /* Cobalt.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cobalt.xcodeproj; path = Cobalt/Cobalt.xcodeproj; sourceTree = "<group>"; };
+		710CADE41E48A5D100DB0C52 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		710CADE71E48A63700DB0C52 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		710CADE81E48A63700DB0C52 /* CobaltAppInfosPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CobaltAppInfosPlugin.h; sourceTree = "<group>"; };
+		710CADE91E48A63700DB0C52 /* CobaltAppInfosPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CobaltAppInfosPlugin.m; sourceTree = "<group>"; };
+		710CADEA1E48A63700DB0C52 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		710CADEF1E48A67400DB0C52 /* CobaltFcmPluginInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CobaltFcmPluginInit.swift; sourceTree = "<group>"; };
+		710CADF01E48A67400DB0C52 /* FcmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FcmManager.swift; sourceTree = "<group>"; };
+		710CADF11E48A67400DB0C52 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		710CADF51E48A6C000DB0C52 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		71AE465E1E08133A0016D660 /* FirebaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71AE46611E08133A0016D660 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71AE46631E08133A0016D660 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				710CADE21E48A53C00DB0C52 /* libCobalt.a in Frameworks */,
 				90683B58A31C1F3D0C746205 /* Pods_FirebaseDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,14 +100,48 @@
 		6C8D9433877E9B6ECA7680A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				710CADD61E48A53000DB0C52 /* Cobalt.xcodeproj */,
 				AA23365E26EBC3B50602BE5D /* Pods_FirebaseDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		710CADD71E48A53000DB0C52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				710CADDD1E48A53000DB0C52 /* libCobalt.a */,
+				710CADDF1E48A53000DB0C52 /* Cobalt.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		710CADE61E48A63700DB0C52 /* Plugins-AppInfos-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				710CADE71E48A63700DB0C52 /* .gitignore */,
+				710CADE81E48A63700DB0C52 /* CobaltAppInfosPlugin.h */,
+				710CADE91E48A63700DB0C52 /* CobaltAppInfosPlugin.m */,
+				710CADEA1E48A63700DB0C52 /* LICENSE */,
+			);
+			path = "Plugins-AppInfos-iOS";
+			sourceTree = "<group>";
+		};
+		710CADEE1E48A67400DB0C52 /* cobalt-plugin-fcm-ios */ = {
+			isa = PBXGroup;
+			children = (
+				710CADEF1E48A67400DB0C52 /* CobaltFcmPluginInit.swift */,
+				710CADF01E48A67400DB0C52 /* FcmManager.swift */,
+				710CADF11E48A67400DB0C52 /* README.md */,
+			);
+			path = "cobalt-plugin-fcm-ios";
+			sourceTree = "<group>";
+		};
 		71AE46551E08133A0016D660 = {
 			isa = PBXGroup;
 			children = (
+				710CADEE1E48A67400DB0C52 /* cobalt-plugin-fcm-ios */,
+				710CADE61E48A63700DB0C52 /* Plugins-AppInfos-iOS */,
+				710CADF51E48A6C000DB0C52 /* www */,
 				71AE46601E08133A0016D660 /* FirebaseDemo */,
 				71AE465F1E08133A0016D660 /* Products */,
 				029F4748AF552BC7F3343AB5 /* Pods */,
@@ -81,6 +160,7 @@
 		71AE46601E08133A0016D660 /* FirebaseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				710CADE41E48A5D100DB0C52 /* Constants.swift */,
 				71AE46731E0813AD0016D660 /* FirebaseDemo.entitlements */,
 				71AE46611E08133A0016D660 /* AppDelegate.swift */,
 				71AE46631E08133A0016D660 /* ViewController.swift */,
@@ -110,6 +190,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				710CADE11E48A53600DB0C52 /* PBXTargetDependency */,
 			);
 			name = FirebaseDemo;
 			productName = FirebaseDemo;
@@ -152,6 +233,12 @@
 			mainGroup = 71AE46551E08133A0016D660;
 			productRefGroup = 71AE465F1E08133A0016D660 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 710CADD71E48A53000DB0C52 /* Products */;
+					ProjectRef = 710CADD61E48A53000DB0C52 /* Cobalt.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				71AE465D1E08133A0016D660 /* FirebaseDemo */,
@@ -159,14 +246,35 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		710CADDD1E48A53000DB0C52 /* libCobalt.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCobalt.a;
+			remoteRef = 710CADDC1E48A53000DB0C52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		710CADDF1E48A53000DB0C52 /* Cobalt.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Cobalt.bundle;
+			remoteRef = 710CADDE1E48A53000DB0C52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		71AE465C1E08133A0016D660 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				710CADF61E48A6C000DB0C52 /* www in Resources */,
 				71AE466C1E08133A0016D660 /* LaunchScreen.storyboard in Resources */,
+				710CADE31E48A54200DB0C52 /* Cobalt.bundle in Resources */,
 				71AE46751E0818550016D660 /* GoogleService-Info.plist in Resources */,
+				710CADED1E48A63700DB0C52 /* LICENSE in Resources */,
 				71AE46691E08133A0016D660 /* Assets.xcassets in Resources */,
+				710CADEB1E48A63700DB0C52 /* .gitignore in Resources */,
 				71AE46671E08133A0016D660 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,12 +334,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				710CADF21E48A67400DB0C52 /* CobaltFcmPluginInit.swift in Sources */,
 				71AE46641E08133A0016D660 /* ViewController.swift in Sources */,
+				710CADF31E48A67400DB0C52 /* FcmManager.swift in Sources */,
+				710CADF41E48A67400DB0C52 /* README.md in Sources */,
+				710CADEC1E48A63700DB0C52 /* CobaltAppInfosPlugin.m in Sources */,
 				71AE46621E08133A0016D660 /* AppDelegate.swift in Sources */,
+				710CADE51E48A5D100DB0C52 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		710CADE11E48A53600DB0C52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Framework;
+			targetProxy = 710CADE01E48A53600DB0C52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		71AE46651E08133A0016D660 /* Main.storyboard */ = {
@@ -293,11 +414,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Cobalt/Cobalt/Cobalt-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -337,9 +459,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Cobalt/Cobalt/Cobalt-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
