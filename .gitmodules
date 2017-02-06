@@ -12,6 +12,3 @@
 	path = www/Plugins-AppInfos-Web
 	url = https://github.com/Cobaltians-Plugins/Plugins-AppInfos-Web.git
 	branch = develop
-[submodule "cobalt-plugin-fcm-ios"]
-	path = cobalt-plugin-fcm-ios
-	url = http://sd-66128.dedibox.fr/kristal/cobalt-plugin-fcm-ios.git
