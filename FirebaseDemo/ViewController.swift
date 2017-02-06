@@ -17,7 +17,7 @@ class ViewController: CobaltViewController, CobaltDelegate {
     required init?(coder: NSCoder){
         super.init(coder: coder)
         self.setDelegate(self)
-        Cobalt.setResourcePath(Bundle.main.resourcePath! + "/common/")
+        Cobalt.setResourcePath(Bundle.main.resourcePath! + "/www/common/")
         initWithPage("index.html", andController: "default")
     }
     
