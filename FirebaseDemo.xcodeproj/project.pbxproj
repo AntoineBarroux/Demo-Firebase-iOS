@@ -13,10 +13,10 @@
 		710CADEB1E48A63700DB0C52 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 710CADE71E48A63700DB0C52 /* .gitignore */; };
 		710CADEC1E48A63700DB0C52 /* CobaltAppInfosPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 710CADE91E48A63700DB0C52 /* CobaltAppInfosPlugin.m */; };
 		710CADED1E48A63700DB0C52 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 710CADEA1E48A63700DB0C52 /* LICENSE */; };
-		710CADF21E48A67400DB0C52 /* CobaltFcmPluginInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710CADEF1E48A67400DB0C52 /* CobaltFcmPluginInit.swift */; };
-		710CADF31E48A67400DB0C52 /* FcmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710CADF01E48A67400DB0C52 /* FcmManager.swift */; };
-		710CADF41E48A67400DB0C52 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 710CADF11E48A67400DB0C52 /* README.md */; };
 		710CADF61E48A6C000DB0C52 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 710CADF51E48A6C000DB0C52 /* www */; };
+		710CADFB1E48A8BA00DB0C52 /* CobaltFcmPluginInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710CADF81E48A8BA00DB0C52 /* CobaltFcmPluginInit.swift */; };
+		710CADFC1E48A8BA00DB0C52 /* FcmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710CADF91E48A8BA00DB0C52 /* FcmManager.swift */; };
+		710CADFD1E48A8BA00DB0C52 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 710CADFA1E48A8BA00DB0C52 /* README.md */; };
 		71AE46621E08133A0016D660 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AE46611E08133A0016D660 /* AppDelegate.swift */; };
 		71AE46641E08133A0016D660 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AE46631E08133A0016D660 /* ViewController.swift */; };
 		71AE46671E08133A0016D660 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71AE46651E08133A0016D660 /* Main.storyboard */; };
@@ -59,10 +59,10 @@
 		710CADE81E48A63700DB0C52 /* CobaltAppInfosPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CobaltAppInfosPlugin.h; sourceTree = "<group>"; };
 		710CADE91E48A63700DB0C52 /* CobaltAppInfosPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CobaltAppInfosPlugin.m; sourceTree = "<group>"; };
 		710CADEA1E48A63700DB0C52 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		710CADEF1E48A67400DB0C52 /* CobaltFcmPluginInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CobaltFcmPluginInit.swift; sourceTree = "<group>"; };
-		710CADF01E48A67400DB0C52 /* FcmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FcmManager.swift; sourceTree = "<group>"; };
-		710CADF11E48A67400DB0C52 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		710CADF51E48A6C000DB0C52 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		710CADF81E48A8BA00DB0C52 /* CobaltFcmPluginInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CobaltFcmPluginInit.swift; sourceTree = "<group>"; };
+		710CADF91E48A8BA00DB0C52 /* FcmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FcmManager.swift; sourceTree = "<group>"; };
+		710CADFA1E48A8BA00DB0C52 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		71AE465E1E08133A0016D660 /* FirebaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71AE46611E08133A0016D660 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71AE46631E08133A0016D660 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,20 +126,21 @@
 			path = "Plugins-AppInfos-iOS";
 			sourceTree = "<group>";
 		};
-		710CADEE1E48A67400DB0C52 /* cobalt-plugin-fcm-ios */ = {
+		710CADF71E48A8BA00DB0C52 /* cobalt-plugin-fcm-ios */ = {
 			isa = PBXGroup;
 			children = (
-				710CADEF1E48A67400DB0C52 /* CobaltFcmPluginInit.swift */,
-				710CADF01E48A67400DB0C52 /* FcmManager.swift */,
-				710CADF11E48A67400DB0C52 /* README.md */,
+				710CADF81E48A8BA00DB0C52 /* CobaltFcmPluginInit.swift */,
+				710CADF91E48A8BA00DB0C52 /* FcmManager.swift */,
+				710CADFA1E48A8BA00DB0C52 /* README.md */,
 			);
-			path = "cobalt-plugin-fcm-ios";
+			name = "cobalt-plugin-fcm-ios";
+			path = "../Cobalt-Plugin-Fcm/cobalt-plugin-fcm-ios";
 			sourceTree = "<group>";
 		};
 		71AE46551E08133A0016D660 = {
 			isa = PBXGroup;
 			children = (
-				710CADEE1E48A67400DB0C52 /* cobalt-plugin-fcm-ios */,
+				710CADF71E48A8BA00DB0C52 /* cobalt-plugin-fcm-ios */,
 				710CADE61E48A63700DB0C52 /* Plugins-AppInfos-iOS */,
 				710CADF51E48A6C000DB0C52 /* www */,
 				71AE46601E08133A0016D660 /* FirebaseDemo */,
@@ -334,10 +335,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				710CADF21E48A67400DB0C52 /* CobaltFcmPluginInit.swift in Sources */,
+				710CADFB1E48A8BA00DB0C52 /* CobaltFcmPluginInit.swift in Sources */,
 				71AE46641E08133A0016D660 /* ViewController.swift in Sources */,
-				710CADF31E48A67400DB0C52 /* FcmManager.swift in Sources */,
-				710CADF41E48A67400DB0C52 /* README.md in Sources */,
+				710CADFC1E48A8BA00DB0C52 /* FcmManager.swift in Sources */,
+				710CADFD1E48A8BA00DB0C52 /* README.md in Sources */,
 				710CADEC1E48A63700DB0C52 /* CobaltAppInfosPlugin.m in Sources */,
 				71AE46621E08133A0016D660 /* AppDelegate.swift in Sources */,
 				710CADE51E48A5D100DB0C52 /* Constants.swift in Sources */,
